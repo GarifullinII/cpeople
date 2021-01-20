@@ -6,14 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>cpeople</title>
     <meta name="title" content="Мое портфолио">
-    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta name="description" content="Разработка сайтов, landing page, приложений. Настройка и запуск рекламных кампаний в Facebook/Instagram">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Мое портфолио">
-    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cpeople.xyz/">
+<meta property="og:title" content="cpeople">
+<meta property="og:description" content="Разработка сайтов, landing page, приложений. Настройка и запуск рекламных кампаний в Facebook/Instagram">
+<meta property="og:image" content="https://cpeople.xyz/img/cpeoplesite.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://cpeople.xyz/">
+<meta property="twitter:title" content="cpeople">
+<meta property="twitter:description" content="Разработка сайтов, landing page, приложений. Настройка и запуск рекламных кампаний в Facebook/Instagram">
+<meta property="twitter:image" content="https://cpeople.xyz/img/cpeoplesite.jpg">
 
     <!-- Favicon  -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -70,12 +77,12 @@
 
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ОБО МНЕ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#about">ОБО МНЕ</a></li>
+                    <li class="menu__link"><a href="#experience">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
 
@@ -117,8 +124,8 @@
                 Занимаюсь созданием сайтов и приложений, развиваю проекты в digital
             </h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Обо мне</a>
+                <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                <a href="#about" class="promo__link">Обо мне</a>
             </div>
         </div>
     </section>
@@ -133,7 +140,7 @@
                         <img src="img/main_photo.jpg" alt="photo">
                     </picture>
                 </div>
-                <div class="about__descr">
+                <div class="about__descr" id="about">
                     <h2 class="title title_fz16 about__title">Обо мне</h2>
                     <div class="title title_fz26 about__subtitle">Давайте знакомиться</div>
                     <div class="divider"></div>
@@ -186,7 +193,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="experience">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Опыт</h2>
             <div class="title title_fz26 title__section-subtitle">Чем я буду полезен</div>
@@ -307,7 +314,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Навыки</h2>
             <div class="title title_fz26 title__section-subtitle">Что я использую в работе</div>
@@ -412,7 +419,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title_fz26 title__section-subtitle">Мои работы</div>
@@ -434,14 +441,14 @@
                 <a href="https://master-peeling.ru" class="portfolio__item">
                     <img src="img/works/masterpeeling.jpg" alt="peeling">
                 </a>
-                <a href="https://happytrips.site" class="portfolio__item horizontal">
+                <a href="https://garifullinii.github.io/Tours-to-Bali/" class="portfolio__item horizontal">
                     <img src="img/works/happytrips.jpg" alt="happytrips">
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
@@ -521,7 +528,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
