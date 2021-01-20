@@ -127,11 +127,15 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">Обо мне</h2>
-                    <div class="title title_fz26 about__subtitle">Давайте знакомиться. Меня зовут Ильдар</div>
+                    <div class="title title_fz26 about__subtitle">Давайте знакомиться</div>
                     <div class="divider"></div>
                     <p class="about__text">
                     Занимаюсь разработкой адаптивных сайтов и приложений, настраиваю и запускаю рекламные кампании в Facebook/Instagram. 
@@ -357,7 +361,7 @@
                         <img src="icons/skills/wordpress.svg" alt="Wordpress">
                     </div>
                     <h3 class="title title_fz14">WordPress</h3>
-                    <p>Это удобная и простая система создания и управления сайтом.</p>
+                    <p>Это удобная и простая система создания и управления для вашего сайта.</p>
                 </div>
             </div>
 
