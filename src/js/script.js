@@ -16,3 +16,15 @@ const counters = document.querySelectorAll('.skills__ratings-counter'),
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+const XHR = new XMLHTTPRequest ()
+function sendMail (f)
+    {
+const str = [] 
+    for (var el = f.elements, j = 0; j < el.length - 1; j++)
+        {
+        str [j] = el[j]. name + '=' + encodeURIComponent (el[j].value);
+        }
+    XHR.open ('get', 'smart.php?' + str.join ('&'), true);
+    XHR.send (null);
+    }
