@@ -1,30 +1,33 @@
-const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close');
 
-hamburger.addEventListener('click', () => {
-    menu.classList.add('active');
-});
+    const hamburger = document.querySelector('.hamburger'),
+        menu = document.querySelector('.menu'),
+        closeElem = document.querySelector('.menu__close');
 
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
-});
+    hamburger.addEventListener('click', () => {
+        menu.classList.add('active');
+    });
 
-const counters = document.querySelectorAll('.skills__ratings-counter'),
-      lines = document.querySelectorAll('.skills__ratings-line span');
+    closeElem.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
 
-counters.forEach( (item, i) => {
-    lines[i].style.width = item.innerHTML;
-});
+    const counters = document.querySelectorAll('.skills__ratings-counter'),
+        lines = document.querySelectorAll('.skills__ratings-line span');
 
-const XHR = new XMLHTTPRequest ()
-function sendMail (f)
-    {
-const str = [] 
-    for (var el = f.elements, j = 0; j < el.length - 1; j++)
-        {
-        str [j] = el[j]. name + '=' + encodeURIComponent (el[j].value);
-        }
-    XHR.open ('get', 'smart.php?' + str.join ('&'), true);
-    XHR.send (null);
-    }
+    counters.forEach( (item, i) => {
+        lines[i].style.width = item.innerHTML;
+    });
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+
+            $('form').trigger('reset');
+            return false;
+        });
+    });
