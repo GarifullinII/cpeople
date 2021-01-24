@@ -18,12 +18,12 @@ counters.forEach( (item, i) => {
 });
 
 const XHR = new XMLHTTPRequest ()
-    function sendMail (f) {
-        const str = [] 
-            for (var el = f.elements, j = 0; j < el.length - 1; j++)
-                {
-                str [j] = el[j]. name + '=' + encodeURIComponent (el[j].value);
-                }
-            XHR.open ('get', 'smart.php?' + str.join ('&'), true);
-            XHR.send (null);
+function sendMail (f) {
+const str = [] 
+    for (var el = f.elements, j = 0; j < el.length - 1; j++)
+        {
+        str [j] = el[j]. name + '=' + encodeURIComponent (el[j].value);
         }
+    XHR.open ('get', 'smart.php?' + str.join ('&'), true);
+    XHR.send (null);
+    }
